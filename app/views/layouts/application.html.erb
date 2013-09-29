@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adventures in Austin</title>
+  <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand" href="/">Adventures in Austin</a>
+	      <ul class="nav">
+	        <li class="active"><a href="/adventures">Adventures!</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="container">
+	  <%= yield %>
+	</div>
+
+	<footer>
+	  <div class="container">
+	    Rails Girls 2013 | Modified by Amy <3
+	  </div>
+	</footer>
+
+</body>
+</html>
